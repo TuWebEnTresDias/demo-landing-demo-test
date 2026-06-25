@@ -1,6 +1,6 @@
-/* ============================================
+/* ==================================================
    RESET
-   ============================================ */
+   ================================================== */
 
 *, *::before, *::after {
     margin: 0;
@@ -22,7 +22,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 img {
     max-width: 100%;
     height: auto;
@@ -46,9 +45,9 @@ button {
     font-family: inherit;
 }
 
-/* ============================================
+/* ==================================================
    VARIABLES
-   ============================================ */
+   ================================================== */
 
 :root {
     /* Facebook Brand Colors */
@@ -57,6 +56,11 @@ button {
     --fb-blue-light: #E7F3FF;
     --fb-green: #42B72A;
     --fb-green-hover: #36A420;
+
+    /* WhatsApp Brand Colors */
+    --wa-green: #25D366;
+    --wa-green-dark: #128C7E;
+    --wa-green-light: #DCF8C6;
 
     /* Neutrals */
     --white: #FFFFFF;
@@ -116,9 +120,9 @@ button {
     --nav-height: 60px;
 }
 
-/* ============================================
+/* ==================================================
    LAYOUT
-   ============================================ */
+   ================================================== */
 
 .container {
     width: 100%;
@@ -133,9 +137,9 @@ button {
     }
 }
 
-/* ============================================
+/* ==================================================
    NAVBAR
-   ============================================ */
+   ================================================== */
 
 .navbar {
     position: fixed;
@@ -307,9 +311,9 @@ button {
     }
 }
 
-/* ============================================
+/* ==================================================
    BUTTONS
-   ============================================ */
+   ================================================== */
 
 .btn {
     display: inline-flex;
@@ -364,15 +368,24 @@ button {
     background: var(--gray-100);
 }
 
+.btn-whatsapp {
+    background: var(--wa-green);
+    color: var(--white);
+}
+
+.btn-whatsapp:hover {
+    background: var(--wa-green-dark);
+}
+
 .btn-large {
     padding: 14px 28px;
     font-size: 1.0625rem;
     border-radius: var(--radius-md);
 }
 
-/* ============================================
+/* ==================================================
    HERO
-   ============================================ */
+   ================================================== */
 
 .hero {
     position: relative;
@@ -558,9 +571,9 @@ button {
     50% { transform: scale(1.05); }
 }
 
-/* ============================================
+/* ==================================================
    SECTION COMMON
-   ============================================ */
+   ================================================== */
 
 .section-header {
     text-align: center;
@@ -600,9 +613,9 @@ button {
     }
 }
 
-/* ============================================
+/* ==================================================
    FEATURES
-   ============================================ */
+   ================================================== */
 
 .features {
     padding: var(--space-4xl) 0;
@@ -650,7 +663,7 @@ button {
 .feature-desc {
     font-size: 0.9375rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 @media (min-width: 768px) {
@@ -665,9 +678,9 @@ button {
     }
 }
 
-/* ============================================
+/* ==================================================
    STATS
-   ============================================ */
+   ================================================== */
 
 .stats {
     padding: var(--space-4xl) 0;
@@ -716,9 +729,9 @@ button {
     }
 }
 
-/* ============================================
+/* ==================================================
    ABOUT
-   ============================================ */
+   ================================================== */
 
 .about {
     padding: var(--space-4xl) 0;
@@ -831,9 +844,137 @@ button {
     }
 }
 
-/* ============================================
+/* ==================================================
+   WHATSAPP SECTION
+   ================================================== */
+
+.whatsapp-section {
+    padding: var(--space-4xl) 0;
+    background: linear-gradient(135deg, #f6fff9 0%, var(--white) 50%, #eafff2 100%);
+    overflow: hidden;
+}
+
+.whatsapp-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+.whatsapp-visual {
+    display: flex;
+    justify-content: center;
+    order: 1;
+}
+
+.whatsapp-graphic {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--wa-green);
+}
+
+.whatsapp-ring.ring-1 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.12;
+    animation: rotate-ring 20s linear infinite;
+}
+
+.whatsapp-ring.ring-2 {
+    width: 75%;
+    height: 75%;
+    opacity: 0.22;
+    animation: rotate-ring 15s linear infinite reverse;
+}
+
+.whatsapp-ring.ring-3 {
+    width: 50%;
+    height: 50%;
+    opacity: 0.35;
+    animation: rotate-ring 10s linear infinite;
+}
+
+.whatsapp-icon {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    color: var(--wa-green);
+    filter: drop-shadow(0 4px 18px rgba(37, 211, 102, 0.35));
+    animation: pulse-slow 5s ease-in-out infinite;
+}
+
+.whatsapp-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp-content {
+    text-align: center;
+    order: 2;
+}
+
+.whatsapp-content .section-tag {
+    color: var(--wa-green-dark);
+}
+
+.whatsapp-content .section-title {
+    margin-bottom: var(--space-md);
+}
+
+.whatsapp-text {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+}
+
+.whatsapp-content .btn {
+    margin-top: var(--space-md);
+}
+
+@media (min-width: 1024px) {
+    .whatsapp-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-3xl);
+    }
+
+    .whatsapp-visual {
+        order: 1;
+    }
+
+    .whatsapp-content {
+        order: 2;
+        text-align: left;
+    }
+
+    .whatsapp-content .section-tag,
+    .whatsapp-content .section-title {
+        text-align: left;
+    }
+
+    .whatsapp-graphic {
+        width: 340px;
+        height: 340px;
+    }
+
+    .whatsapp-icon {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+/* ==================================================
    CTA SECTION
-   ============================================ */
+   ================================================== */
 
 .cta-section {
     padding: var(--space-4xl) 0;
@@ -868,9 +1009,9 @@ button {
     }
 }
 
-/* ============================================
+/* ==================================================
    FOOTER
-   ============================================ */
+   ================================================== */
 
 .footer {
     background: var(--white);
@@ -947,9 +1088,9 @@ button {
     }
 }
 
-/* ============================================
+/* ==================================================
    ANIMATIONS
-   ============================================ */
+   ================================================== */
 
 .animate-on-scroll {
     opacity: 0;
@@ -969,9 +1110,9 @@ button {
 .animate-on-scroll[data-delay="400"] { transition-delay: 0.4s; }
 .animate-on-scroll[data-delay="500"] { transition-delay: 0.5s; }
 
-/* ============================================
+/* ==================================================
    UTILITIES
-   ============================================ */
+   ================================================== */
 
 .visually-hidden {
     position: absolute;
