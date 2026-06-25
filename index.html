@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Conecta con el mundo</title>
+    <meta name="description" content="Facebook te ayuda a conectarte y compartir con las personas de tu vida. Únete a la comunidad más grande del mundo.">
+    <meta property="og:title" content="Facebook - Conecta con el mundo">
+    <meta property="og:description" content="Facebook te ayuda a conectarte y compartir con las personas de tu vida. Únete a la comunidad más grande del mundo.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg viewBox="0 0 36 36" class="fb-logo" aria-label="Facebook">
+                    <path d="M20.181 35.87C29.094 34.791 36 27.202 36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.442 5.811 15.526 13.652 17.471L14 24h-3.5v-4H14v-2.769c0-3.374 2.04-5.231 5.111-5.231 1.472 0 2.719.11 2.719.11v3h-1.531C19.26 15.111 18.5 16.036 18.5 17.007V20h3.392l-.547 4H18.5v11.87z" fill="#1877F2"/>
+                </svg>
+                <span class="logo-text">facebook</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Funciones</a>
+                <a href="#stats" class="nav-link">Comunidad</a>
+                <a href="#about" class="nav-link">Acerca de</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#signup" class="btn btn-primary nav-cta">Crear cuenta</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#features" class="mobile-link">Funciones</a>
+            <a href="#stats" class="mobile-link">Comunidad</a>
+            <a href="#about" class="mobile-link">Acerca de</a>
+            <a href="#signup" class="btn btn-primary mobile-cta">Crear cuenta</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Facebook te ayuda a <span class="highlight">conectarte</span> y compartir con las personas de tu vida.</h1>
+                    <p class="hero-subtitle">Más de 2000 millones de personas usan Facebook para mantenerse en contacto con amigos y familiares, descubrir cosas nuevas y compartir lo que les importa.</p>
+                    <div class="hero-cta" id="signup">
+                        <a href="https://www.facebook.com/r.php" class="btn btn-primary btn-large" target="_blank" rel="noopener">Crear cuenta nueva</a>
+                        <a href="https://www.facebook.com/login" class="btn btn-secondary btn-large" target="_blank" rel="noopener">Iniciar sesión</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-graphic">
+                        <div class="graphic-circle circle-1"></div>
+                        <div class="graphic-circle circle-2"></div>
+                        <div class="graphic-circle circle-3"></div>
+                        <div class="fb-icon-large">
+                            <svg viewBox="0 0 36 36" aria-hidden="true">
+                                <path d="M20.181 35.87C29.094 34.791 36 27.202 36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.442 5.811 15.526 13.652 17.471L14 24h-3.5v-4H14v-2.769c0-3.374 2.04-5.231 5.111-5.231 1.472 0 2.719.11 2.719.11v3h-1.531C19.26 15.111 18.5 16.036 18.5 17.007V20h3.392l-.547 4H18.5v11.87z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--white)"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Todo lo que necesitas</span>
+                    <h2 class="section-title">Conecta de formas que importan</h2>
+                    <p class="section-subtitle">Facebook ofrece herramientas para que te comuniques, compartas y crees comunidades alrededor de lo que más te gusta.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll" data-delay="0">
+                        <div class="feature-icon" style="--icon-color: #1877F2;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Messenger</h3>
+                        <p class="feature-desc">Mensajes instantáneos, videollamadas y grupos de chat. Mantente cerca de quienes importan, sin importar la distancia.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" data-delay="100">
+                        <div class="feature-icon" style="--icon-color: #42B72A;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Amistades</h3>
+                        <p class="feature-desc">Encuentra personas que conoces, haz nuevas amistades y amplía tu red social. Tu comunidad está a un clic de distancia.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" data-delay="200">
+                        <div class="feature-icon" style="--icon-color: #F5533D;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Historias</h3>
+                        <p class="feature-desc">Comparte momentos de tu día con fotos y videos que desaparecen en 24 horas. Sé auténtico sin comprometer tu perfil.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" data-delay="300">
+                        <div class="feature-icon" style="--icon-color: #F7B928;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                                <line x1="4" y1="22" x2="4" y2="15"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Grupos</h3>
+                        <p class="feature-desc">Únete a comunidades de personas que comparten tus intereses. Desde hobbies hasta causas sociales, hay un grupo para vos.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" data-delay="400">
+                        <div class="feature-icon" style="--icon-color: #E1306C;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Watch</h3>
+                        <p class="feature-desc">Descubre videos personalizados, transmisiones en vivo y contenido de creadores que te inspiran. Entretenimiento a tu medida.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" data-delay="500">
+                        <div class="feature-icon" style="--icon-color: #8B5CF6;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Marketplace</h3>
+                        <p class="feature-desc">Compra, vende y descubre artículos cerca de tu zona. Una forma segura y práctica de encontrar lo que necesitás.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats" id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item animate-on-scroll" data-delay="0">
+                        <span class="stat-number" data-target="2900">0</span>
+                        <span class="stat-suffix">M</span>
+                        <span class="stat-label">Usuarios activos mensuales</span>
+                    </div>
+                    <div class="stat-item animate-on-scroll" data-delay="100">
+                        <span class="stat-number" data-target="200">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Países alcanzados</span>
+                    </div>
+                    <div class="stat-item animate-on-scroll" data-delay="200">
+                        <span class="stat-number" data-target="70">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Idiomas disponibles</span>
+                    </div>
+                    <div class="stat-item animate-on-scroll" data-delay="300">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Uso gratuito</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content animate-on-scroll">
+                        <span class="section-tag">Nuestra misión</span>
+                        <h2 class="section-title">Dar a la gente el poder de construir comunidad y acercar al mundo</h2>
+                        <p class="about-text">Facebook fue fundada en 2004 con la creencia de que la conexión es un motor de progreso. Desde entonces, hemos trabajado para que las personas puedan compartir, colaborar y construir comunidades sin importar dónde se encuentren.</p>
+                        <p class="about-text">Hoy, más de 2 mil millones de personas usan Facebook, Messenger, Instagram y WhatsApp para mantenerse conectadas con las personas y cosas que les importan.</p>
+                        <a href="https://about.facebook.com/" class="btn btn-outline" target="_blank" rel="noopener">Conocé más sobre nosotros</a>
+                    </div>
+                    <div class="about-visual animate-on-scroll">
+                        <div class="about-graphic">
+                            <div class="globe">
+                                <div class="globe-ring ring-1"></div>
+                                <div class="globe-ring ring-2"></div>
+                                <div class="globe-ring ring-3"></div>
+                                <div class="globe-center">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <line x1="2" y1="12" x2="22" y2="12"/>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2 class="cta-title">Formá parte de la comunidad más grande del mundo</h2>
+                    <p class="cta-subtitle">Creá tu cuenta en segundos y empezá a conectarte con personas de todo el planeta.</p>
+                    <a href="https://www.facebook.com/r.php" class="btn btn-white btn-large" target="_blank" rel="noopener">Empezar ahora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 36 36" class="fb-logo" aria-label="Facebook">
+                            <path d="M20.181 35.87C29.094 34.791 36 27.202 36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.442 5.811 15.526 13.652 17.471L14 24h-3.5v-4H14v-2.769c0-3.374 2.04-5.231 5.111-5.231 1.472 0 2.719.11 2.719.11v3h-1.531C19.26 15.111 18.5 16.036 18.5 17.007V20h3.392l-.547 4H18.5v11.87z" fill="#1877F2"/>
+                        </svg>
+                        <span class="logo-text">facebook</span>
+                    </div>
+                    <p class="footer-tagline">Conecta con el mundo.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-heading">Producto</h4>
+                    <ul class="footer-list">
+                        <li><a href="#features">Funciones</a></li>
+                        <li><a href="https://www.facebook.com/messenger" target="_blank" rel="noopener">Messenger</a></li>
+                        <li><a href="https://www.facebook.com/watch" target="_blank" rel="noopener">Watch</a></li>
+                        <li><a href="https://www.facebook.com/marketplace" target="_blank" rel="noopener">Marketplace</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-heading">Empresa</h4>
+                    <ul class="footer-list">
+                        <li><a href="https://about.facebook.com/" target="_blank" rel="noopener">Acerca de</a></li>
+                        <li><a href="https://about.facebook.com/about-us/" target="_blank" rel="noopener">Cómo funciona</a></li>
+                        <li><a href="https://about.fb.com/news/" target="_blank" rel="noopener">Noticias</a></li>
+                        <li><a href="https://www.facebook.com/careers" target="_blank" rel="noopener">Empleo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-heading">Soporte</h4>
+                    <ul class="footer-list">
+                        <li><a href="https://www.facebook.com/help" target="_blank" rel="noopener">Centro de ayuda</a></li>
+                        <li><a href="https://www.facebook.com/privacy" target="_blank" rel="noopener">Privacidad</a></li>
+                        <li><a href="https://www.facebook.com/policies" target="_blank" rel="noopener">Términos</a></li>
+                        <li><a href="https://www.facebook.com/help/contact/141748826474683" target="_blank" rel="noopener">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2024 Facebook. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
